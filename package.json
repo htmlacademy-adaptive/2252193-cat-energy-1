@@ -19,7 +19,7 @@
     "source/*.html"
   ],
   "engines": {
-    "node": "^16"
+    "node": "^20"
   },
   "type": "module"
 }
