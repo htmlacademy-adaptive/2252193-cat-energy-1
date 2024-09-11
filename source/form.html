@@ -47,40 +47,40 @@
   </header>
 
   <main class="main-form-container form">
-    <h1 class="main-form-container__title">Подбор программы</h1>
+    <h1 class="main-form-container__title main-form-title">Подбор программы</h1>
     <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
-      <fieldset class="main-form-container__field-input form-filter">
-        <legend class="form-filter__title">Заполните анкету, и мы подберем программу питания для вашего кота</legend>
-        <label class="form-filter__label" for="cat-name">Имя:*</label>
-        <input class="form-filter__input field" value="Барсик" type="text" id="cat-name" name="cat-data" placeholder="Барсик" required>
-        <label class="form-filter__label" for="cat-weight">Вес (кг):*</label>
-        <input class="form-filter__input field" value="5" type="number" id="cat-weight" name="cat-data" placeholder="7" required>
-        <label class="form-filter__label" for="cat-age">Возраст (лет):</label>
-        <input class="form-filter__input field" value="5" type="number" id="cat-age" name="cat-data" placeholder="7">
+      <fieldset class="main-form-container__field-input form-filter fieldset-reset">
+        <legend class="form-filter__title filter-title">Заполните анкету, и мы подберем программу питания для вашего кота</legend>
+        <label class="form-filter__label filter-label" for="cat-name">Имя:*</label>
+        <input class="form-filter__input filter-input field" value="Барсик" type="text" id="cat-name" name="cat-data" placeholder="Барсик" required>
+        <label class="form-filter__label filter-label" for="cat-weight">Вес (кг):*</label>
+        <input class="form-filter__input filter-input field" value="7" type="number" id="cat-weight" name="cat-data" placeholder="7" required>
+        <label class="form-filter__label filter-label" for="cat-age">Возраст (лет):</label>
+        <input class="form-filter__input filter-input field" value="7" type="number" id="cat-age" name="cat-data" placeholder="7">
       </fieldset>
 
       <div class="form__wrapper">
-        <fieldset class="form__filter-group filter">
+        <fieldset class="form__filter-group filter fieldset-reset">
           <ul class="filter__list list-reset">
             <li class="filter__item">
               <label class="filter__option">
                 <input class="filter__input" type="radio" name="nutrition" value="diet" checked>
                 <span class="filter__mark"></span>
-                <span class="filter__label">Похудение</span>
+                <span class="filter__label filter-label">Похудение</span>
               </label>
             </li>
             <li class="filter__item">
               <label class="filter__option">
                 <input class="filter__input" type="radio" name="nutrition" value="mass-gain">
                 <span class="filter__mark"></span>
-                <span class="filter__label">Набор массы</span>
+                <span class="filter__label filter-label">Набор массы</span>
               </label>
             </li>
             <li class="filter__item">
               <label class="filter__option">
                 <input class="filter__input" type="radio" name="nutrition" value="idk">
                 <span class="filter__mark"></span>
-                <span class="filter__label">Не знаю (Нужен ваш совет)</span>
+                <span class="filter__label filter-label">Не знаю (Нужен ваш совет)</span>
               </label>
             </li>
           </ul>
@@ -88,62 +88,62 @@
       </div>
 
       <div class="form__contacts-data contacts-data">
-        <fieldset class="contacts-data__field-input contacts-filter">
-          <legend class="contacts-filter__title">Контактные данные (владельца кота)</legend>
-          <label class="contacts-filter__label" for="e-mail">E-mail:*</label>
-          <input class="contacts-filter__input field" value="kuklachev@gmail.com" type="email" id="e-mail" name="cat-owner-email" placeholder="kuklachev@gmail.com" required>
-          <label class="contacts-filter__label" for="telephone">Телефон:*</label>
-          <input class="contacts-filter__input field" value="telephone" type="tel" id="telephone" name="cat-owner-telephone" placeholder="8 (960) 900-60-90" required>
+        <fieldset class="contacts-data__field-input contacts-filter fieldset-reset">
+          <legend class="contacts-filter__title contacts-filter-title">Контактные данные (владельца кота)</legend>
+          <label class="contacts-filter__label filter-label" for="e-mail">E-mail:*</label>
+          <input class="contacts-filter__input filter-input field" value="kuklachev@gmail.com" type="email" id="e-mail" name="cat-owner-email" placeholder="kuklachev@gmail.com" required>
+          <label class="contacts-filter__label filter-label" for="telephone">Телефон:*</label>
+          <input class="contacts-filter__input filter-input field" value="telephone" type="tel" id="telephone" name="cat-owner-telephone" placeholder="8 (960) 900-60-90" required>
         </fieldset>
       </div>
 
       <div class="form__comments comments">
-        <fieldset class="comments__field-input comments-filter">
-          <legend class="comments-filter__title">Комментарий</legend>
+        <fieldset class="comments__field-input comments-filter fieldset-reset">
+          <legend class="comments-filter__title comments-title">Комментарий</legend>
           <label class="comments-filter__label visually-hidden" for="comments">Комментарий: </label>
-          <textarea class="comments-filter__input field" id="comments" name="cat-owner-comments" wrap="soft" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="comments-filter__input filter-input comments-input field" id="comments" name="cat-owner-comments" wrap="soft" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
       </div>
 
       <div class="form__secondary other">
-        <fieldset class="other__filter-group">
-          <legend class="other__filter-title">Дополнительно</legend>
+        <fieldset class="other__filter-group other-group fieldset-reset">
+          <legend class="other__filter-title other-title">Дополнительно</legend>
           <ul class="other__filter-list list-reset">
             <li class="other__filter-item">
               <label class="other__label control">
                 <input class="visually-hidden control__input" type="checkbox" name="additional-group" value="sweetener" checked>
                 <span class="control__mark"></span>
-                <span class="control__label">Сахарозаменитель</span>
+                <span class="control__label control-label">Сахарозаменитель</span>
               </label>
             </li>
             <li class="other__filter-item">
               <label class="other__label control">
                 <input class="visually-hidden control__input" type="checkbox" name="additional-group" value="water">
                 <span class="control__mark"></span>
-                <span class="control__label">Питьевая вода</span>
+                <span class="control__label control-label">Питьевая вода</span>
               </label>
             </li>
             <li class="other__filter-item">
               <label class="other__label control">
                 <input class="visually-hidden control__input" type="checkbox" name="additional-group" value="milk">
                 <span class="control__mark"></span>
-                <span class="control__label">Молоко</span>
+                <span class="control__label control-label">Молоко</span>
               </label>
             </li>
             <li class="other__filter-item">
               <label class="other__label control">
                 <input class="visually-hidden control__input" type="checkbox" name="additional-group" value="vitamins">
                 <span class="control__mark"></span>
-                <span class="control__label">Витамины</span>
+                <span class="control__label control-label">Витамины</span>
               </label>
             </li>
           </ul>
         </fieldset>
       </div>
 
-      <div class="form__apply">
-        <button class="form__button button" type="submit">Отправить заявку</button>
-        <span class="form__text">* — Обязательные поля</span>
+      <div class="form__apply form-apply">
+        <button class="form__button form-button button" type="submit">Отправить заявку</button>
+        <p class="form__text form-text">* — Обязательные поля</p>
       </div>
     </form>
   </main>
@@ -151,7 +151,7 @@
   <footer class="page-footer">
     <section class="location">
       <div class="location__container location-container">
-        <div class="location__wrapper contacts">
+        <div class="location__wrapper form-contacts">
           <h2 class="location__heading location-heading">Приглашаем к сотрудничеству дилеров!</h2>
           <address class="location__address address">
             <p class="location__text location-text">ул. Большая Конюшенная, д. 19/8</p>
