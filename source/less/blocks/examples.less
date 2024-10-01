@@ -1,12 +1,24 @@
 .examples {
-  padding: 25px 20px 40px;
-  background-color: #f2f2f2;
+  @media (max-width: @mobile-width-only) {
+    padding: 25px 20px 40px;
+    background-color: #f2f2f2;
+  }
+  @media (min-width: @tablet-width) {
+    padding: 35px 30px;
+    margin-bottom: 20px;
+  min-height: 1080px;
+  }
 }
 
 .examples__wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
+  @media (min-width: @tablet-width) {
+    min-height: 192px;
+    gap: 60px;
+    padding-bottom: 55px;
+  }
 }
 
 .examples__title {
@@ -16,6 +28,10 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .examples__description {
@@ -25,12 +41,27 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.examples__container {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .examples__results {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media (min-width: @tablet-width) {
+    width: 367px;
+  }
 }
 
 .examples__type {
@@ -41,6 +72,9 @@
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  @media (min-width: @tablet-width) {
+    width: 162px;
+  }
 }
 
 .examples__number {
@@ -53,10 +87,15 @@
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 11px;
+  }
 }
 
 .examples__text {
-  width: 124px;
+  width: 77px;
   margin: 0;
   padding: 0;
   font-family: "Lato", "Arial", sans-serif;
@@ -65,6 +104,11 @@
   line-height: 12px;
   text-align: center;
   color: #444444;
+  @media (min-width: @tablet-width) {
+    width: 125px;
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .examples__cost {
@@ -76,6 +120,12 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
 }
 
 .examples__list {
