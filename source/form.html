@@ -48,14 +48,22 @@
   <main class="form">
     <h1 class="form__title">Подбор программы</h1>
     <form class="form__catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
+      <h2 class="form__filter-title">Заполните анкету, и мы подберем <br> программу питания для вашего кота</h2>
       <fieldset class="form__field-input">
-        <legend class="form__filter-title">Заполните анкету, и мы подберем программу питания для вашего кота</legend>
-        <label class="form__filter-type form__filter-type--label" for="cat-name">Имя:*</label>
-        <input class="form__filter-type form__filter-type--input" value="Барсик" type="text" id="cat-name" name="cat-data" placeholder="Барсик" required>
-        <label class="form__filter-type form__filter-type--label" for="cat-weight">Вес (кг):*</label>
-        <input class="form__filter-type form__filter-type--input" value="7" type="number" id="cat-weight" name="cat-data" placeholder="7" required>
-        <label class="form__filter-type form__filter-type--label" for="cat-age">Возраст (лет):</label>
-        <input class="form__filter-type form__filter-type--input" value="7" type="number" id="cat-age" name="cat-data" placeholder="7">
+        <div class="form__container">
+          <div class="form__filter-wrapper">
+            <label class="form__filter-type form__filter-type--label" for="cat-name">Имя:*</label>
+            <input class="form__filter-type form__filter-type--input" value="Барсик" type="text" id="cat-name" name="cat-data" placeholder="Барсик" required>
+          </div>
+          <div class="form__filter-wrapper">
+            <label class="form__filter-type form__filter-type--label" for="cat-weight">Вес (кг):*</label>
+            <input class="form__filter-type form__filter-type--input" value="7" type="number" id="cat-weight" name="cat-data" placeholder="7" required>
+          </div>
+          <div class="form__filter-wrapper">
+            <label class="form__filter-type form__filter-type--label" for="cat-age">Возраст (лет):</label>
+            <input class="form__filter-type form__filter-type--input" value="7" type="number" id="cat-age" name="cat-data" placeholder="7">
+          </div>
+        </div>
       </fieldset>
 
       <div class="form__wrapper">
@@ -87,12 +95,18 @@
       </div>
 
       <div class="form__contacts-data contacts-data">
+        <h2 class="contacts-data__title">Контактные данные (владельца кота)</h2>
         <fieldset class="contacts-data__filter">
-          <legend class="contacts-data__title">Контактные данные (владельца кота)</legend>
-          <label class="contacts-data__type contacts-data__type--label" for="e-mail">E-mail:*</label>
-          <input class="contacts-data__type contacts-data__type--input" value="kuklachev@gmail.com" type="email" id="e-mail" name="cat-owner-email" placeholder="kuklachev@gmail.com" required>
-          <label class="contacts-data__type contacts-data__type--label" for="telephone">Телефон:*</label>
-          <input class="contacts-data__type contacts-data__type--input" value="telephone" type="tel" id="telephone" name="cat-owner-telephone" placeholder="8 (960) 900-60-90" required>
+          <div class="contacts-data__container">
+            <div class="contacts-data__wrapper">
+              <label class="contacts-data__type contacts-data__type--label" for="e-mail">E-mail:*</label>
+              <input class="contacts-data__type contacts-data__type--input" value="kuklachev@gmail.com" type="email" id="e-mail" name="cat-owner-email" placeholder="kuklachev@gmail.com" required>
+            </div>
+            <div class="contacts-data__wrapper">
+              <label class="contacts-data__type contacts-data__type--label" for="telephone">Телефон:*</label>
+              <input class="contacts-data__type contacts-data__type--input" value="8 (960) 900-60-90" type="tel" id="telephone" name="cat-owner-telephone" placeholder="8 (960) 900-60-90" required>
+            </div>
+          </div>
         </fieldset>
       </div>
 
@@ -140,7 +154,7 @@
         </fieldset>
       </div>
 
-      <div class="form__apply form-apply">
+      <div class="form__apply">
         <button class="form__button button" type="submit">Отправить заявку</button>
         <p class="form__text">* — Обязательные поля</p>
       </div>

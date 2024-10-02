@@ -1,6 +1,9 @@
 .location-secondary {
   background-color: #f2f2f2;
   min-height: 474px;
+  @media (min-width: @tablet-width) {
+    min-height: 600px;
+  }
 }
 
 .location-secondary__wrapper {
@@ -9,6 +12,11 @@
   min-height: 112px;
   display: flex;
   flex-wrap: wrap;
+  @media (min-width: @tablet-width) {
+    min-height: 200px;
+    padding: 57px 70px;
+    justify-content: space-between;
+  }
 }
 
 .location-secondary__heading {
@@ -21,6 +29,20 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+  @media (min-width: @tablet-width) {
+    width: 163px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.location-secondary__address {
+  @media (min-width: @tablet-width) {
+    width: 157px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
 }
 
 .location-secondary__text {
@@ -32,4 +54,9 @@
   line-height: 20px;
   font-style: normal;
   color: #444444;
+  @media (min-width: @tablet-width) {
+    width: 157px;
+    font-size: 16px;
+    text-align: right;
+  }
 }
