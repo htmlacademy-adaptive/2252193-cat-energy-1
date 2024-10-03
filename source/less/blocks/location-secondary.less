@@ -4,6 +4,10 @@
   @media (min-width: @tablet-width) {
     min-height: 600px;
   }
+  @media (min-width: @desktop-width) {
+    min-height: 400px;
+    position: relative;
+  }
 }
 
 .location-secondary__wrapper {
@@ -16,6 +20,14 @@
     min-height: 200px;
     padding: 57px 70px;
     justify-content: space-between;
+  }
+  @media (min-width: @desktop-width) {
+    width: 565px;
+    padding: 60px 79px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 95px;
+    left: 110px;
   }
 }
 
@@ -58,5 +70,8 @@
     width: 157px;
     font-size: 16px;
     text-align: right;
+  }
+  @media (min-width: @desktop-width) {
+    text-align: left;
   }
 }

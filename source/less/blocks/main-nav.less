@@ -8,9 +8,14 @@
     min-height: 66px;
   }
   @media (min-width: @tablet-width) {
-    width: 710px;
+    width: 708px;
     margin: 25px auto;
     padding: 5px;
+    min-height: 50px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: 55px auto;
   }
 }
 
@@ -30,6 +35,9 @@
     min-height: 50px;
     padding: 2px;
   }
+  @media (min-width: @desktop-width) {
+    min-width: 202px;
+  }
 }
 
 .main-nav__logo {
@@ -41,6 +49,9 @@
   @media (min-width: @tablet-width) {
     width: 175px;
   }
+  @media (min-width: @desktop-width) {
+    min-width: 202px;
+  }
 }
 
 .main-nav__hamburger-button {
@@ -48,7 +59,7 @@
   height: 24px;
   margin: 0;
   padding: 4px 0;
-  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     display: none;
   }
 }
@@ -87,6 +98,9 @@
     padding: 2px;
     min-height: 36px;
   }
+  @media (min-width: @desktop-width) {
+    min-height: 40px;
+  }
 }
 
 .main-nav__link {
@@ -98,8 +112,10 @@
   line-height: 20px;
   text-transform: uppercase;
   @media (min-width: @tablet-width) {
-    display: flex;
     font-size: 18px;
     line-height: 24px;
+  }
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
   }
 }

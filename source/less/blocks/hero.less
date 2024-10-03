@@ -9,6 +9,10 @@
     margin: 0 auto;
     min-height: 810px;
   }
+  @media (min-width: @desktop-width) {
+    margin: 0 110px;
+    min-height: 694px;
+  }
 }
 
 .hero__background {
@@ -40,11 +44,13 @@
   line-height: 36px;
   color: #ffffff;
   @media (min-width: @tablet-width) {
-    width: 555px;
-    padding: 65px 10px 40px 120px;
+    padding: 65px 10px 30px 120px;
     font-size: 60px;
     line-height: 60px;
     color: #000000;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 50px 10px 30px 80px;
   }
 }
 
@@ -57,11 +63,13 @@
   color: #ffffff;
   text-transform: uppercase;
   @media (min-width: @tablet-width) {
-    width: 415px;
-    padding: 0 10px 21px 120px;
+    padding: 10px 10px 21px 120px;
     font-size: 20px;
     line-height: 20px;
     color: #000000;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 10px 10px 52px 80px;
   }
 }
 
@@ -70,9 +78,21 @@
   @media (min-width: @tablet-width) {
     display: none;
   }
+  @media (min-width: @desktop-width) {
+    // перемещается через position??
+  }
 }
 
 .hero__link {
+  margin: 0;
+  padding: 3px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  align-content: center;
+  background-color: #68b738;
+  color: #ffffff;
   @media (max-width: @mobile-width-only) {
     width: 320px;
     min-height: 40px;
@@ -89,18 +109,7 @@
     min-height: 54px;
   }
   @media (min-width: @desktop-width) {
-    width: 242px;
-    font-size: 20px;
-    line-height: 26px;
-    min-height: 54px;
+    top: 0;
+    left: 80px;
   }
-  margin: 0;
-  padding: 3px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-align: center;
-  align-content: center;
-  background-color: #68b738;
-  color: #ffffff;
 }

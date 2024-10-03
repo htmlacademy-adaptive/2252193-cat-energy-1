@@ -6,6 +6,10 @@
   @media (min-width: @tablet-width) {
     gap: 66px;
   }
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+    gap: 76px;
+  }
 }
 
 .contacts-data__title {
@@ -24,6 +28,9 @@
     font-size: 36px;
     line-height: 36px;
   }
+  @media (min-width: @desktop-width) {
+    padding: 5px;
+  }
 }
 
 .contacts-data__filter {
@@ -40,6 +47,10 @@
     padding: 5px 70px;
     min-height: 124px;
   }
+  @media (min-width: @desktop-width) {
+    padding: 5px;
+    min-height: 52px;
+  }
 }
 
 .contacts-data__container {
@@ -47,6 +58,10 @@
   gap: 14px;
   @media (min-width: @tablet-width) {
     gap: 20px;
+  }
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(2, 570px);
+    gap: 80px;
   }
 }
 

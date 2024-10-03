@@ -16,6 +16,10 @@
     font-size: 60px;
     line-height: 60px;
   }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 20px;
+    padding: 14px 110px;
+  }
 }
 
 .form__catalog-filter {
@@ -25,19 +29,8 @@
     flex-direction: column;
     gap: 55px;
   }
-}
-
-.form__field-input {
-  .fieldset-reset();
-  @media (max-width: @mobile-width-only) {
-    margin: 0 auto;
-    padding: 0;
-    min-height: 160px;
-    width: 280px;
-  }
-  @media (min-width: @tablet-width) {
-    min-height: 196px;
-    padding: 5px 70px;
+  @media (min-width: @desktop-width ) {
+    gap: 60px;
   }
 }
 
@@ -58,18 +51,55 @@
     font-size: 20px;
     line-height: 30px;
   }
+  @media (min-width: @desktop-width) {
+    padding: 21px 110px 5px;
+  }
+}
+
+.form__double-filter {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 5px 110px;
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    gap: 80px;
+  }
+}
+
+.form__field-input {
+  .fieldset-reset();
+  @media (max-width: @mobile-width-only) {
+    margin: 0 auto;
+    padding: 0;
+    min-height: 160px;
+    width: 280px;
+  }
+  @media (min-width: @tablet-width) {
+    min-height: 196px;
+    padding: 5px 70px;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 5px;
+  }
 }
 
 .form__container {
   display: grid;
-  gap: 14px;
   @media (max-width: @mobile-width-only) {
     padding-bottom: 10px;
     margin-bottom: 20px;
+    gap: 14px;
   }
   @media (min-width: @tablet-width) {
     width: 628px;
     gap: 20px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 570px;
   }
 }
 
@@ -120,6 +150,11 @@
     margin-bottom: 30px;
     padding: 0 70px 30px;
   }
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(2, 570px);
+    column-gap: 80px;
+    padding: 0 110px 38px;
+  }
 }
 
 .form__button {
@@ -128,6 +163,9 @@
     min-height: 54px;
     font-size: 20px;
     line-height: 26px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 570px;
   }
 }
 
@@ -146,6 +184,9 @@
     font-size: 16px;
     margin: 0;
     align-self: center;
+    justify-self: left;
+  }
+  @media (min-width: @desktop-width) {
     justify-self: left;
   }
 }

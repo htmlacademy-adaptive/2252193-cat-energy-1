@@ -17,6 +17,10 @@
     min-height: 205px;
     padding: 0 70px;
   }
+  @media (min-width: @desktop-width) {
+    min-height: 133px;
+    padding: 0 110px;
+  }
 }
 
 .other-products__filter-title {
@@ -35,7 +39,7 @@
     line-height: 36px;
     padding-bottom: 57px;
   }
-}
+
 
 .other-products__filter-list {
   .list-reset();
@@ -50,6 +54,12 @@
     grid-template-columns: repeat(2, 284px);
     column-gap: 60px;
     row-gap: 32px;
+  }
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 80px;
+    row-gap: 30px;
   }
 }
 
@@ -77,3 +87,7 @@
     line-height: 20px;
   }
 }
+
+
+
+
