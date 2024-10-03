@@ -1,14 +1,17 @@
 .hero {
   margin: 0;
+
   @media (max-width: @mobile-width-only) {
     background-image: url("../img/hero-background-mobile.jpg");
     background-repeat: no-repeat;
     min-height: 480px;
   }
+
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     min-height: 810px;
   }
+
   @media (min-width: @desktop-width) {
     margin: 0 110px;
     min-height: 694px;
@@ -43,12 +46,14 @@
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
+
   @media (min-width: @tablet-width) {
     padding: 65px 10px 30px 120px;
     font-size: 60px;
     line-height: 60px;
     color: #000000;
   }
+
   @media (min-width: @desktop-width) {
     padding: 50px 10px 30px 80px;
   }
@@ -62,12 +67,14 @@
   line-height: 14px;
   color: #ffffff;
   text-transform: uppercase;
+
   @media (min-width: @tablet-width) {
     padding: 10px 10px 21px 120px;
     font-size: 20px;
     line-height: 20px;
     color: #000000;
   }
+
   @media (min-width: @desktop-width) {
     padding: 10px 10px 52px 80px;
   }
@@ -75,9 +82,11 @@
 
 .hero__image {
   margin: 0 20px 6px;
+
   @media (min-width: @tablet-width) {
     display: none;
   }
+
   @media (min-width: @desktop-width) {
     // перемещается через position??
   }
@@ -93,12 +102,14 @@
   align-content: center;
   background-color: #68b738;
   color: #ffffff;
+
   @media (max-width: @mobile-width-only) {
     width: 320px;
     min-height: 40px;
     font-size: 16px;
     line-height: 20px;
   }
+
   @media (min-width: @tablet-width) {
     position: relative;
     top: 30px;
@@ -108,6 +119,7 @@
     line-height: 26px;
     min-height: 54px;
   }
+
   @media (min-width: @desktop-width) {
     top: 0;
     left: 80px;
