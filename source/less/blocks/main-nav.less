@@ -1,6 +1,7 @@
 .main-nav {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 
@@ -10,6 +11,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    flex-direction: row;
     width: 708px;
     margin: 25px auto;
     padding: 5px;
@@ -67,6 +69,7 @@
   height: 24px;
   margin: 0;
   padding: 4px 0;
+  display: none;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -75,12 +78,7 @@
 
 .main-nav__hamburger {
   @media (max-width: @mobile-width-only) {
-    display: inline-block;
     //display: none;
-    position: absolute;
-    z-index: 1;
-    top: 66px;
-    left: 0;
   }
 }
 

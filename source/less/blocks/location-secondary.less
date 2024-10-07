@@ -13,13 +13,15 @@
 }
 
 .location-secondary__wrapper {
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   padding: 26px 20px;
   min-height: 112px;
   display: flex;
   flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
+    width: 768px;
     min-height: 200px;
     padding: 57px 70px;
     justify-content: space-between;
@@ -81,4 +83,9 @@
   @media (min-width: @desktop-width) {
     text-align: left;
   }
+}
+
+.location__img {
+  display: block;
+  margin: 0 auto;
 }
