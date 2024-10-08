@@ -1,24 +1,52 @@
 .hero {
-  margin: 0;
-  min-height: 480px;
-  background-image: url("../img/hero-background-mobile.jpg");
-  background-repeat: no-repeat;
+  margin: 0 auto;
+
+  @media (max-width: @mobile-width-only) {
+    display: block;
+    background-image: url("../img/hero-background-mobile.jpg");
+    background-repeat: no-repeat;
+    min-height: 480px;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 810px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 110px;
+    min-height: 694px;
+  }
 }
 
 .hero__background {
-  width: 320px;
-  height: 302px;
-  background-color: rgba(104, 183, 56, 0.85);
+  margin: 0 auto;
+
+  @media (max-width: @mobile-width-only) {
+    min-width: 320px;
+    height: 302px;
+    background-color: rgba(104, 183, 56, 0.85);
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .hero__text-wrapper {
-  margin: 0 20px 20px 20px;
-  padding: 26px 15px 9px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  justify-content: center;
-  text-align: center;
+  @media (max-width: @mobile-width-only) {
+    margin: 0 20px 20px 20px;
+    padding: 26px 15px 9px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .hero__title {
@@ -29,6 +57,17 @@
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    padding: 65px 10px 30px 90px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 50px 10px 30px 80px;
+  }
 }
 
 .hero__text {
@@ -39,23 +78,63 @@
   line-height: 14px;
   color: #ffffff;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding: 10px 10px 21px 90px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 10px 10px 52px 80px;
+  }
 }
 
 .hero__image {
   margin: 0 20px 6px;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    // перемещается через position??
+  }
 }
 
 .hero__link {
-  min-width: 280px;
-  min-height: 40px;
-  margin: 0;
+  margin: 0 auto;
   padding: 3px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 16px;
   text-transform: uppercase;
   text-align: center;
   align-content: center;
   background-color: #68b738;
   color: #ffffff;
+
+  @media (max-width: @mobile-width-only) {
+    width: 320px;
+    min-height: 40px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    position: relative;
+    top: 30px;
+    left: 90px;
+    width: 242px;
+    font-size: 20px;
+    line-height: 26px;
+    min-height: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 0;
+    left: 80px;
+  }
 }

@@ -1,21 +1,51 @@
 .main-nav {
-  position: relative;
-  min-height: 66px;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: @mobile-width-only) {
+    position: relative;
+    min-height: 66px;
+  }
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    width: 708px;
+    margin: 25px auto;
+    padding: 5px;
+    min-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: 55px auto;
+  }
 }
 
 .main-nav__menu {
-  min-height: 56px;
-  width: 320px;
-  margin: 5px 0;
-  padding: 5px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: @mobile-width-only) {
+    width: 320px;
+    min-height: 56px;
+    margin: 5px 0;
+    padding: 5px 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 170px;
+    min-height: 50px;
+    padding: 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 202px;
+  }
 }
 
 .main-nav__logo {
@@ -24,6 +54,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    width: 175px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 202px;
+  }
 }
 
 .main-nav__hamburger-button {
@@ -31,28 +69,49 @@
   height: 24px;
   margin: 0;
   padding: 4px 0;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__hamburger {
-  display: inline-block;
-  //display: none;
-  position: absolute;
-  z-index: 1;
-  top: 66px;
-  left: 0;
+  @media (max-width: @mobile-width-only) {
+    //display: none;
+  }
 }
 
 .main-nav__list {
   .list-reset();
+
+  @media (min-width: @tablet-width) {
+    min-width: 440px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+  }
 }
 
 .main-nav__item {
-  width: 320px;
-  padding: 10px 20px;
-  min-height: 66px;
   align-content: center;
   text-align: center;
   background-color: #ffffff;
+
+  @media (max-width: @mobile-width-only) {
+    width: 320px;
+    padding: 10px 20px;
+    min-height: 66px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 2px;
+    min-height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 40px;
+  }
 }
 
 .main-nav__link {
@@ -63,4 +122,13 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+  }
 }

@@ -1,7 +1,14 @@
 .food-card {
-  min-height: 209px;
-  margin: 0 20px 10px;
-  padding: 25px 0 15px;
+  @media (max-width: @mobile-width-only) {
+    min-height: 209px;
+    margin: 0 0 10px;
+    padding: 25px 0 15px;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 510px;
+    padding: 25px 38px;
+  }
 }
 
 .food-card__ref {
@@ -17,6 +24,20 @@
   font-size: 16px;
   line-height: 20px;
   color: #222222;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.food-card__designations {
+  @media (min-width: @tablet-width) {
+    background-color: #f2f2f2;
+    min-height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .food-card__type {
@@ -27,19 +48,33 @@
   line-height: 16px;
   font-style: normal;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .food-card__link {
-  min-width: 280px;
+  width: 280px;
   min-height: 40px;
   margin: 0;
   padding: 3px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
   text-align: center;
   align-content: center;
   background-color: #68b738;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    width: 250px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 169px;
+  }
 }

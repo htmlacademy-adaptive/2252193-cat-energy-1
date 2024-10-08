@@ -1,15 +1,41 @@
 .food-options {
-  margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+    gap: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .food-options__option {
+  width: 280px;
   min-height: 265px;
-  margin: 0;
-  padding: 20px;
+  margin: 0 auto;
+  padding: 0;
   background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    padding: 15px;
+    min-height: 372px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    padding: 41px 52px;
+    min-height: 374px;
+  }
 }
 
 .food-options__title {
@@ -20,6 +46,10 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+  }
 }
 
 .food-options__description {
@@ -30,6 +60,12 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
 }
 
 .food-options__link {
@@ -39,4 +75,9 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
 }

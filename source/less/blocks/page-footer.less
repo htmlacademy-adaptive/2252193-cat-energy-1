@@ -1,34 +1,66 @@
 .page-footer__wrapper {
-  min-height: 240px;
-  padding: 40px 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
-  font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   background-color: #f2f2f2;
+}
+
+.page-footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+
+  @media (max-width: @mobile-width-only) {
+    width: 320px;
+    min-height: 240px;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    min-height: 145px;
+    padding: 55px 30px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    min-height: 169px;
+    padding: 66px 110px;
+  }
 }
 
 .page-footer__main-logo {
   width: 280px;
   justify-self: center;
+
+  @media (min-width: @tablet-width) {
+    width: 130px;
+    padding: 2px 5px;
+    align-self: center;
+  }
 }
 
 .page-footer__social-list {
   .list-reset();
   width: 132px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 28px);
+  column-gap: 24px;
+  row-gap: 5px;
+  align-content: center;
+  justify-items: center;
 }
 
 .page-footer__social-item {
   width: 28px;
   min-height: 22px;
-  display: inline-block;
+  align-content: center;
+  justify-content: center;
+  padding: 5px 2px;
 }
 
 .page-footer__logo {
@@ -37,6 +69,10 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    width: 168px;
+  }
 }
 
 .page-footer__logo-academy-text {

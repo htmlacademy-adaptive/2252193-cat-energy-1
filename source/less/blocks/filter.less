@@ -1,14 +1,48 @@
 .filter {
   .fieldset-reset();
-  margin: 0 auto;
-  margin-bottom: 44px;
-  padding: 0;
-  min-height: 116px;
-  width: 280px;
+
+  @media (max-width: @mobile-width-only) {
+    margin: 0 auto;
+    margin-bottom: 44px;
+    padding: 26px 0 0;
+    min-height: 116px;
+    width: 280px;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 196px;
+    margin: 0;
+    padding: 5px 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 5px;
+  }
 }
 
 .filter__list {
   .list-reset();
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 13px;
+
+  @media (min-width: @tablet-width) {
+    padding: 20px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 25px 0;
+  }
+}
+
+.filter__item {
+  min-height: 30px;
+  align-content: center;
+
+  @media (min-width: @tablet-width) {
+    min-height: 40px;
+  }
 }
 
 .filter__label {
@@ -19,4 +53,10 @@
   font-size: 16px;
   line-height: 18px;
   color: #444444;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
